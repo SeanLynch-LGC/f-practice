@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command":"dotnet",
+			"group": "build",
+			"label": "build",
+			"args": [
+				"build"
+			],
+			"detail": "Build the helloworld.fsproj project using dotnet build"
+
+		}
+	]
+}

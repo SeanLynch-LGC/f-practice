@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1/qYEC1r31gDmV4ddmE4iXQkYjXXmDwY16qlXQziuyuX4Gp5fgYc31hDjtcqyDVLx8YARSpIid3Fhvi/Fdz+Xg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\AsyncPractice\\AsyncPractice.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

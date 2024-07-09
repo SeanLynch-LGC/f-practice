@@ -1,0 +1,92 @@
+## Upload PDF (João)
+João uploads the MAP and MCR PDFs to FileService with a randon and not saved Id
+F#
+type SendFileRequest =
+    { PatientId: CustomerCompositeId
+      FeatureName: string 
+      File: FileUpload }
+type FileUpload =
+    { Content: byte[]
+      Id: FileId
+      FileName: string
+      MediaTypeHeader: string }
+The FileService saves the files with the following Key
+C#
+var fileTransferUtilityRequest = new TransferUtilityUploadRequest
+{
+//  ...
+    Key = $"{patientId}/{featureName}/{fileInfo.FileId}",
+    ContentType = fileInfo.ContentType,
+//  ...
+};
+fileTransferUtilityRequest.Metadata.Add(FileMetaDataTags.OriginalFileName, fileInfo.FileName);
+
+Then he calls "patch-result-reports" CORE endpoint to associate the file with the Activation
+F#
+public class S3Reference
+{
+    public string Bucket { get; set; }
+    public string Key { get; set; }
+    public string Region { get; set; }
+}
+
+## Query CORE for existing ResultReports - MAP & MCR (Sean)
+So that the FE can know whether the user can download or upload a PDF, we need to modify and query Core's endpoint.
+The endpoint is GetResults
+Postman: Core API / Results / CoreLocal - Result
+    {{core_service_local}}/halo-results/patient/:patient-id/result/:composite-id?username=nurse-row%2bhalojc%40letsgetchecked.com
+json
+{
+    "HasPdf": true,
+    "Reports": [
+        {
+            "Bucket": "development-veritasgenetics-labreports",
+            "Key": "{patientId}/MAP | MCR/{fileInfo.FileId}.pdf",
+            "Region": "us-east-1"
+        }
+    ],
+    "Biomarkers": [],
+    "Timestamp": "2023-03-16T15:33:20Z"
+}
+
+Then match the Report Key to find, If it's MAP or MCR, and modify the FE DTO to return something like:
+json
+{
+    "biomarkers": [],
+    "status": 0,
+    "timestamp": "2023-03-16T15:33:20+00:00",
+    "hasPdf": true,
+    "hasMAP": false,
+    "hasMCR": true
+}
+
+## New endpoints GetMap and GetMcr
+The new endpoints will be 90% similar between GetMap and GetMcr
+
+We can call the modified GetResults CORE endpoint
+Postman: Core API / Results / CoreLocal - Result
+    {{core_service_local}}/halo-results/patient/:patient-id/result/:composite-id?username=nurse-row%2bhalojc%40letsgetchecked.com
+json
+{
+    "HasPdf": true,
+    "Reports": [
+        {
+            "Bucket": "development-veritasgenetics-labreports",
+            "Key": "{patientId}/MAP | MCR/{fileInfo.FileId}.pdf",
+            "Region": "us-east-1"
+        }
+    ],
+    "Biomarkers": [],
+    "Timestamp": "2023-03-16T15:33:20Z"
+}
+
+Then match the Report Key to find:
+- If it's MAP or MCR
+- The fileId, which should be the file name. In this example "20231009152122-LGC-1179-8900-1102-FGNZEL.pdf"
+
+Finally, call the FileService's GetFile with 
+F#
+type GetFileRequest =
+    { PatientId: CustomerCompositeId
+      FeatureName: MAP || MCR
+      FileId: FileId }

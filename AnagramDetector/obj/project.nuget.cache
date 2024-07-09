@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rmcdzbfUfbm/fjh0LM8acfy5eopl5q49cd9T61Cphjpe9OV0+8JCm70bNF22n/TR8d5MoT0AJPGOf4QonUZf3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\AnagramDetector\\AnagramDetector.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

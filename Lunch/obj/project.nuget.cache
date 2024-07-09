@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L1Z3pvrU/TDkzad9m6mkcJK5CHXDu91yNywWIHaOrtfjWi0jCuYzupvZkOzJUgnAFgottavl1z7BUEU0aZx91A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\Lunch\\Lunch.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512"
+  ],
+  "logs": []
+}

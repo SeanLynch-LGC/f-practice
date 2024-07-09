@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wcflDtiew1jl5WrFWD1Z2K5JupSfdba0HEXu7rzvUXPtX5oK+BdAvr1g1KKVY8aagLMrjheIW+ehjbVFEWXBHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\DelphiFlip\\f#practise.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

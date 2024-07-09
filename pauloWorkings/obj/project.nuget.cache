@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xW64Op/CXViwE5twxtgpb5Jo463lesEY4qC5OWeMAYXuSweSdPoOz7OuHWrIZ9O59dcYVCNXgsO+2/TpIYzBPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\pauloWorkings\\pauloWorkings.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512"
+  ],
+  "logs": []
+}

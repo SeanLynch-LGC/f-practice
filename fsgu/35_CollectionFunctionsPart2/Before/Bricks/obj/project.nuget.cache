@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tWcp1SicS0ugSFSrDwFbM14KI7wR5/iZpQcmywWKa9TA4WtcHtRWIRh65iol6doO71Nx/2mrLYg6ZTccNtQtfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Downloads\\fsgu\\35_CollectionFunctionsPart2\\Before\\Bricks\\Bricks.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

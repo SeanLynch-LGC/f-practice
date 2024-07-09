@@ -1,0 +1,4 @@
+c:\Users\slynch\Documents\f#practise\pauloWorkings\obj\Debug\net7.0\pauloWorkings.fsproj.AssemblyReference.cache
+c:\Users\slynch\Documents\f#practise\pauloWorkings\obj\Debug\net7.0\pauloWorkings.AssemblyInfoInputs.cache
+c:\Users\slynch\Documents\f#practise\pauloWorkings\obj\Debug\net7.0\pauloWorkings.AssemblyInfo.fs
+c:\Users\slynch\Documents\f#practise\pauloWorkings\obj\Debug\net7.0\pauloWorkings.fsproj.CoreCompileInputs.cache

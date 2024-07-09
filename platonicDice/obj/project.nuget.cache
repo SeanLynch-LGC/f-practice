@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+sBc9ZnpQNov3GaKSjEbAxodaTVzYUtRlCWfvlutVgGi9iKFOiq/wVNbPcI4nhGz6F0GmaNFKT4Yw5DVHTBYzg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\slynch\\Documents\\f#practise\\platonicDice\\f#practise.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slynch\\.nuget\\packages\\fsharp.core\\6.0.7\\fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

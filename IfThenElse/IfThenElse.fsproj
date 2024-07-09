@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="KindergartenGarden.fs" />
+    <Compile Include="PhoneNumber.fs" />
+    <Compile Include="YachtGame.fs" />
+    <Compile Include="TestFile.fs" />
+    <Compile Include="DiscriminatedUnionsValentines.fs" />
+    <Compile Include="records.fs" />
+    <Compile Include="matching.fs" />
+    <Compile Include="PigLatin.fs" />
+    <Compile Include="Poker.fs" />
+    <Compile Include="BinarySearchTree.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
